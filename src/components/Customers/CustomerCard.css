@@ -1,0 +1,48 @@
+/* CustomerCard.css */
+.customer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #8BC34A;
+}
+
+.customer-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.customer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.customer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.customer-card-content {
+    padding: 15px;
+}
+
+.customer-card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.customer-card-content p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 5px 0;
+}
+
+.customer-card-content p span {
+    font-weight: bold;
+    color: #333333;
+}

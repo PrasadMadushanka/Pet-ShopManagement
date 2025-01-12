@@ -7,6 +7,7 @@ import IncomePage from "./pages/IncomePage";
 import CustomersPage from "./pages/CustomersPage";
 import InventoryPage from "./pages/InventoryPage";
 import EmployeesPage from "./pages/EmployeesPage";
+import CalendarPage from "./pages/CalendarPage";
 
 function AppRoutes() {
   return (
@@ -20,6 +21,7 @@ function AppRoutes() {
         <Route path="/customers" element={<CustomersPage />} />
         <Route path="/inventory" element={<InventoryPage />} />
         <Route path="/employees" element={<EmployeesPage />} />
+        <Route path="/calendar" element={<CalendarPage />} />
       </Routes>
     
   );

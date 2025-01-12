@@ -1,48 +1,141 @@
-/* CustomerCard.css */
+/* General container for customer cards */
 .customer-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     padding: 20px;
-    background-color: #8BC34A;
-}
-
-.customer-card {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* Individual customer card styling */
+  .customer-card {
     background-color: #ffffff;
-    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-}
-.customer-card:hover {
+  }
+  
+  .customer-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.customer-card img {
-    width: 100%;
-    height: 200px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .customer-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     object-fit: cover;
-}
-
-.customer-card-content {
-    padding: 15px;
-}
-
-.customer-card-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333333;
-}
-
-.customer-card-content p {
-    font-size: 0.9rem;
-    color: #666666;
+    margin-bottom: 15px;
+  }
+  
+  .customer-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .customer-card p {
     margin: 5px 0;
-}
-
-.customer-card-content p span {
+    color: #666;
+  }
+  
+  .customer-card span {
     font-weight: bold;
-    color: #333333;
-}
+    color: #555;
+  }
+  
+  .customer-card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #218838;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .customer-card button:hover {
+    background-color: #28a745;
+  }
+  
+  /* Edit Modal */
+  .edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Edit form container */
+  .edit-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .edit-form h3 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .edit-form input,
+  .edit-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .edit-form textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  .edit-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .edit-form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-form button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  .edit-form button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-form button[type="button"]:hover {
+    background-color: #c82333;
+  }
+  

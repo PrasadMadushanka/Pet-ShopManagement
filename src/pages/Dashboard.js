@@ -29,11 +29,17 @@ function Dashboard() {
           <img src="/images/employees.png" alt="Employees" />
           <h3>Employees</h3>
         </Link>
+        <Link to="/calendar" className="dashboard-card">
+          <img src="/images/calendar.webp" alt="Employees" />
+          <h3>Schedular</h3>
+        </Link>
       </div>
       <div>
       <CustomersPage />
       <InventoryPage />
+      
       </div>
+     
     </div>
   );
 }

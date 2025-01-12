@@ -60,8 +60,32 @@ function InventoryTable({ type }) {
               <td>{item.available_quantity}</td>
               {type === "medicines" && <td>{item.expire_date}</td>}
               <td>
-                <button onClick={() => setEditItem(item)}>Edit</button>
-              </td>
+  <button
+    onClick={() => setEditItem(item)}
+    style={{
+      padding: "8px 16px",
+      backgroundColor: "#218838",
+      color: "#fff",
+      border: "none",
+      borderRadius: "4px",
+      fontSize: "14px",
+      cursor: "pointer",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    }}
+    onMouseEnter={(e) => {
+      e.target.style.backgroundColor = "#218838";
+      e.target.style.transform = "scale(1.05)";
+    }}
+    onMouseLeave={(e) => {
+      e.target.style.backgroundColor = "#28a745";
+      e.target.style.transform = "scale(1)";
+    }}
+  >
+    Edit
+  </button>
+</td>
+
             </tr>
           ))}
         </tbody>

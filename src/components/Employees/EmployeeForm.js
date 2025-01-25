@@ -11,8 +11,7 @@ function EmployeeForm() {
     contactNumber: "",
     email: "",
     basic_salary_amount: "",
-    OT_hours: "",
-    bonus_amount: "",
+   
     companyid: uuidv4(), // Automatically generate a unique company ID
   });
 
@@ -33,8 +32,7 @@ function EmployeeForm() {
         contactNumber: "",
         email: "",
         basic_salary_amount: "",
-        OT_hours: "",
-        bonus_amount: "",
+       
         companyid: uuidv4(), // Reset the company ID
       });
     } catch (error) {
@@ -94,22 +92,8 @@ function EmployeeForm() {
         onChange={handleChange}
         required
       />
-      <input
-        type="number"
-        name="OT_hours"
-        placeholder="Overtime Hours"
-        value={employee.OT_hours}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="number"
-        name="bonus_amount"
-        placeholder="Bonus Amount"
-        value={employee.bonus_amount}
-        onChange={handleChange}
-        required
-      />
+      
+     
       </center>
       <button type="submit">Add Employee</button>
     </form>

@@ -26,8 +26,7 @@ function EmployeeTable() {
           <th>Contact</th>
           <th>Email</th>
           <th>Basic Salary</th>
-          <th>OT Hours</th>
-          <th>Bonus</th>
+          
         </tr>
       </thead>
       <tbody>
@@ -41,8 +40,7 @@ function EmployeeTable() {
             <td>{employee.contactNumber}</td>
             <td>{employee.email}</td>
             <td>{employee.basic_salary_amount}</td>
-            <td>{employee.OT_hours}</td>
-            <td>{employee.bonus_amount}</td>
+
           </tr>
         ))}
       </tbody>
